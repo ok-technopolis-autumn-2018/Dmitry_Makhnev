@@ -9,17 +9,21 @@
 
     .todo-board:before,
     .todo-board:after {
-        /*content: '';*/
         position: absolute;
         top: 100%;
         background: #fff;
-        box-shadow: 0 2px 4px rgba(0,0,0,.2);
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
         z-index: -1;
         }
         .todo-board.__has-content:before,
         .todo-board.__has-content:after {
             content: '';
             }
+
+        .todo-board.__has-content .todo-creator_check-all{
+            visibility: visible;
+            }
+
 
         .todo-board:before {
             left: 8px;

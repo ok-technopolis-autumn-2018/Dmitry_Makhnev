@@ -1,7 +1,7 @@
 
 
 .todo-creator {
-    padding: 16px 16px;
+    padding: 16px 20px;
     }
     .todo-creator:after {
         content: '';
@@ -18,11 +18,11 @@
 
         width: 24px;
         height: 12px;
-
+    
         border: none;
         outline: none;
 
-
+        visibility: hidden;
         background: url(../../../images/select-all.png) no-repeat 0 0;
         }
 
