@@ -1,7 +1,9 @@
 
 
 .todo-creator {
-    padding: 16px 16px;
+    /*padding: 16px 16px;*/
+    padding: 16px 18px;
+    border-bottom: 1px solid #e6e6e6;
     }
     .todo-creator:after {
         content: '';
@@ -11,7 +13,8 @@
 
     .todo-creator_check-all {
         float: left;
-        margin-right: 16px;
+        /*margin-right: 16px;*/
+        margin-right: 18px;
         margin-top: 11px;
 
         padding: 0;
@@ -25,6 +28,10 @@
 
         background: url(../../../images/select-all.png) no-repeat 0 0;
         }
+		
+	.todo-creator_check-all:hover {
+		cursor: pointer;
+	}
 
         @media (-webkit-min-device-pixel-ratio: 1.5),
                (min-resolution: 120dpi),
@@ -47,6 +54,7 @@
             font-size: 24px;
             color: #666;
             font-weight: 300;
+            font-family: HelveticaNeueItalic, Arial, sans-serif;
             }
 
             .todo-creator_text-input::-webkit-input-placeholder {
