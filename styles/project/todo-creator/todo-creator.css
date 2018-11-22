@@ -1,5 +1,3 @@
-
-
 .todo-creator {
     padding: 16px 16px;
     }
@@ -31,6 +29,7 @@
                (min-resolution: 1.5dppx) {
             .todo-creator_check-all {
                 background: url(../../../images/select-all@2x.png) no-repeat 0 0;
+                background-size: 24px 12px;
                 }
             }
 

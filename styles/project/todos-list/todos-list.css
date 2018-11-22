@@ -1,11 +1,12 @@
-
 .todos-list {
 
     }
 
     .todos-list_item {
-        padding: 16px;
-        }
+        border-top: 1px solid #e3e3e3;
+        padding: 12px;
+    }
+    
         .todos-list_item:after {
             content: '';
             clear: both;
@@ -19,20 +20,36 @@
 
         .todos-list_item_text-w {
             overflow: hidden;
+            margin-top: 5px;
+
             }
 
             .todos-list_item_text {
+                font-family: 'Helvetica Neue', Arial, sans-serif;
+                font-size: 24px;
+                color: #666;
+                height: fit-content;
+                font-weight: 100;
                 width: 100%;
                 }
+
+            .crossed_out {
+                text-decoration: line-through;
+                color: #cbcbcb
+            }
+
+        .todos-list_item:hover {
+            background: #f9f9f9;
+            }
 
         .todos-list_item_remove {
             float: right;
             margin-left: 16px;
-            /*display: none;*/
+            margin-top: 9px;
             visibility: hidden;
             }
 
             .todos-list_item:hover .todos-list_item_remove {
-                /*display: block;*/
+                display: block;
                 visibility: visible;
                 }

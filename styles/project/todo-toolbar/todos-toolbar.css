@@ -1,0 +1,49 @@
+.todos-toolbar {
+    border-top: 1px solid #e5dada;
+    width:100%;
+    padding: 32px 8px;
+    box-sizing: border-box;
+    }
+
+    .todos-toolbar_unready-counter{
+        float: left;
+        width: 30%;
+        font-size: 14px;
+        margin-left: 0px;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        color: #666;
+        }
+
+    .todos-toolbar_filters{
+        float: left;
+        width: 40%;
+        text-align: center;
+        }
+
+        .filters-item {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: white;
+            font-size: 14px;
+            color: #666;
+            outline: none;
+            cursor: pointer;
+            border: 1px solid transparent;
+            }
+
+            .filters-item.__selected {
+                border: 1px solid #e5dada;
+                border-radius: 15%;
+                }
+
+        .todos-toolbar_clear-completed {
+            float: left;
+            width: 30%;
+            margin-left: auto;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: white;
+            font-size: 14px;
+            color: #666;
+            text-align: right;
+            border: none;
+            cursor: pointer;
+            }
