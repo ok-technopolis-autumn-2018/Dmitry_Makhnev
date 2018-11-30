@@ -1,7 +1,6 @@
 
-
 .todo-title {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: HelveticaNeue, Arial, sans-serif;
     font-size: 100px;
     font-weight: 100;
     text-transform: lowercase;
@@ -9,5 +8,5 @@
     color: rgba(175, 47, 47, 0.15);
 
     margin: 8px 0;
-    }
+}
 
