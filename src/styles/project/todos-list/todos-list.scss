@@ -4,8 +4,17 @@
     }
 
     .todos-list_item {
-        padding: 16px;
+        padding: 8px 16px;
+        border-bottom: 1px solid #e6e6e6;
+        position: relative;
+        transition: background-color 0.3s ease-in-out;
         }
+        .todos-list_item:first-of-type{
+            border-top: 1px solid #e6e6e6;    
+            }
+        .todos-list_item:hover{
+            background: #fafafa;
+            }
         .todos-list_item:after {
             content: '';
             clear: both;
@@ -13,26 +22,50 @@
             }
 
         .todos-list_item_ready-marker {
-            float: left;
-            margin-right: 16px;
+
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            margin-top: -18px;
+
+            }
+        .todos-list_item:hover .custom-checkbox_visual {
+            border: 1px solid #cdcdcd;
             }
 
         .todos-list_item_text-w {
             overflow: hidden;
+            box-sizing: border-box;
+            margin-right: 20px;
+            margin-left: 44px;
             }
 
             .todos-list_item_text {
                 width: 100%;
+                background: none;
+                outline: none;
+                border: 0;
+                resize:none;
+                overflow: hidden;
+                font-size: 24px;
+                color: #666;
+                font-weight: 300;
+                height: 36px;
+                box-sizing: border-box;
+                padding-top: 5px;
+                text-decoration: line-through;
+                text-decoration-color: transparent;
+                transition: text-decoration-color 0.3s ease-in-out;
                 }
 
         .todos-list_item_remove {
-            float: right;
-            margin-left: 16px;
-            /*display: none;*/
+            position: absolute;
+            right: 16px;
+            bottom: 20px;
+            margin-top: -9px;
             visibility: hidden;
             }
 
             .todos-list_item:hover .todos-list_item_remove {
-                /*display: block;*/
                 visibility: visible;
                 }

@@ -1,0 +1,35 @@
+.todos-toolbar {
+    padding: 8px;
+}
+.todos-toolbar:after{
+    clear: both;
+    display: table;
+    content: '';
+}
+    .todos-toolbar_unready-counter, .todos-toolbar_filters, .todos-toolbar_clear-completed{
+        color: #888888;
+        outline: none;
+        }
+    .todos-toolbar_clear-completed{
+        float: right;
+        }
+    .todos-toolbar_unready-counter{
+        float: left;
+        }
+    .todos-toolbar button{
+        border: 0;
+        background: none;
+        cursor: pointer;
+        color: #888888;
+        }
+    .todos-toolbar_filters{
+        width: 100%;
+        text-align: center;
+        }
+        .filters-item{
+            outline: none;
+            }
+.filters-item.__selected{
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+}
