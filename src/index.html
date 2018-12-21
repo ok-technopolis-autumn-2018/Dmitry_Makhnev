@@ -16,79 +16,19 @@
                 </div>
             </form>
             <div class="todos-list">
-                <div class="todos-list_item">
-                    <div class="custom-checkbox todos-list_item_ready-marker">
-                        <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready" onclick="checkboxClick(this)" />
-                        <div class="custom-checkbox_visual">
-                            <div class="custom-checkbox_visual_icon"></div>
-                        </div>
-                    </div>
-                    <button class="todos-list_item_remove cross-button" aria-label="Delete todo"></button>
-                    <div class="todos-list_item_text-w">
-                        <textarea class="todos-list_item_text" onkeyup="autoresize(this)">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias aperiam a, ex ad assumenda hic voluptatem pariatur suscipit quisquam nesciunt ab, incidunt iusto error quod reprehenderit! Hic inventore commodi explicabo?</textarea>
-                    </div>
-                </div>
-                <div class="todos-list_item">
-                    <div class="custom-checkbox todos-list_item_ready-marker">
-                        <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready" onclick="checkboxClick(this)" />
-                        <div class="custom-checkbox_visual">
-                            <div class="custom-checkbox_visual_icon"></div>
-                        </div>
-                    </div>
-                    <button class="todos-list_item_remove cross-button" aria-label="Delete todo"></button>
-                    <div class="todos-list_item_text-w">
-                        <textarea class="todos-list_item_text" onchange="autoresize(this)">HTML</textarea>
-                    </div>
-                </div>
-                <div class="todos-list_item">
-                    <div class="custom-checkbox todos-list_item_ready-marker">
-                        <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready" onclick="checkboxClick(this)" />
-                        <div class="custom-checkbox_visual">
-                            <div class="custom-checkbox_visual_icon"></div>
-                        </div>
-                    </div>
-                    <button class="todos-list_item_remove cross-button" aria-label="Delete todo"></button>
-                    <div class="todos-list_item_text-w">
-                        <textarea class="todos-list_item_text" onchange="autoresize(this)">CSS</textarea>
-                    </div>
-                </div>
-                <div class="todos-list_item">
-                    <div class="custom-checkbox todos-list_item_ready-marker">
-                        <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready" onclick="checkboxClick(this)" />
-                        <div class="custom-checkbox_visual">
-                            <div class="custom-checkbox_visual_icon"></div>
-                        </div>
-                    </div>
-                    <button class="todos-list_item_remove cross-button" aria-label="Delete todo"></button>
-                    <div class="todos-list_item_text-w">
-                        <textarea class="todos-list_item_text" onchange="autoresize(this)">JS</textarea>
-                    </div>
-                </div>
-                <div class="todos-list_item">
-                    <div class="custom-checkbox todos-list_item_ready-marker">
-                        <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready" onclick="checkboxClick(this)" />
-                        <div class="custom-checkbox_visual">
-                            <div class="custom-checkbox_visual_icon"></div>
-                        </div>
-                    </div>
-                    <button class="todos-list_item_remove cross-button" aria-label="Delete todo"></button>
-                    <div class="todos-list_item_text-w">
-                        <textarea class="todos-list_item_text" onchange="autoresize(this)">JS Tools</textarea>
-                    </div>
-                </div>
+                <!-- todo list items -->
             </div>
             <div class="todos-toolbar">
                 <div class="todos-toolbar_unready-counter">3 items left</div>
                 <button class="todos-toolbar_clear-completed">Clear completed</button>
                 <div class="filters todos-toolbar_filters">
-                    <button class="filters-item __selected" aria-label="Filter: All, is selected">All</button>
-                    <button class="filters-item" aria-label="Filter: Active">Active</button>
-                    <button class="filters-item" aria-label="Filter: Completed">Completed</button>
+                    <button class="filters-item all-btn __selected" aria-label="Filter: All, is selected">All</button>
+                    <button class="filters-item active-btn" aria-label="Filter: Active">Active</button>
+                    <button class="filters-item completed-btn" aria-label="Filter: Completed">Completed</button>
                 </div>
             </div>
         </div>
     </div>
-    <script src="scripts/todos.js"></script>
 <!-- version: <%= version %> -->
 
 </body>
