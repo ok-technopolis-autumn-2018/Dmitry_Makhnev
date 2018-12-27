@@ -1,9 +1,6 @@
 import '../styles/default.scss';
+import Todo from './Todo';
 
-import TodoList from './todo-list';
-window.todoList = new TodoList();
-
-import './todos.js';
-
+new Todo(document.querySelector('.main-layout'));
 
 console.log('init');
